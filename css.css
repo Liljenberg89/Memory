@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgray;
+}
+.container {
+  width: 70vw;
+  height: 90vh;
+  display: none;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 10px;
+}
+#start-game {
+}
+#game-over {
+  display: none;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-image: url(bilder/baksida.png);
+  background-size: cover;
+  border: 1px solid black;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+img {
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+#text {
+  color: white;
+}
+#btn {
+  padding: 5px 20px 5px 20px;
+}
+#counter {
+  color: white;
+}
+#startBTN {
+  background-color: rgb(92, 185, 21);
+  padding: 10px 30px 10px 30px;
+}
+.score {
+  color: white;
+}
+#playerTurn {
+  display: none;
+}

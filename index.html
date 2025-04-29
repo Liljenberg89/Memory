@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div id="game-over">
+      <h1 id="text"></h1>
+      <h3 id="counter"></h3>
+      <h3 id="playerOneScore" class="score"></h3>
+      <h3 id="playerTwoScore" class="score"></h3>
+      <button id="btn" onclick="reset()">reset</button>
+    </div>
+
+    <h4 id="playerTurn">Spelare:</h4>
+
+    <div id="con" class="container">
+      <div class="card" onclick="pressed(0)">
+        <img id="1" data-value="boat" src="bilder/boat.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(1)">
+        <img id="2" data-value="car" src="bilder/car.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(2)">
+        <img id="3" data-value="cat" src="bilder/cat.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(3)">
+        <img id="4" data-value="dog" src="bilder/dog.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(4)">
+        <img id="5" data-value="duck" src="bilder/duck.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(5)">
+        <img id="6" data-value="fish" src="bilder/fish.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(6)">
+        <img id="7" data-value="tractor" src="bilder/tractor.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(7)">
+        <img id="8" data-value="truck" src="bilder/truck.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(8)">
+        <img id="9" data-value="boat" src="bilder/boat.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(9)">
+        <img id="10" data-value="car" src="bilder/car.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(10)">
+        <img id="11" data-value="cat" src="bilder/cat.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(11)">
+        <img id="12" data-value="dog" src="bilder/dog.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(12)">
+        <img id="13" data-value="duck" src="bilder/duck.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(13)">
+        <img id="14" data-value="fish" src="bilder/fish.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(14)">
+        <img id="15" data-value="tractor" src="bilder/tractor.png" alt="" />
+      </div>
+      <div class="card" onclick="pressed(15)">
+        <img id="16" data-value="truck" src="bilder/truck.png" alt="" />
+      </div>
+    </div>
+    <h1 id="memory">Memory</h1>
+    <div id="start-game">
+      <input type="text" id="playerOne" placeholder="Spelare 1" />
+      <input type="text" id="playerTwo" placeholder="Spelare 2" />
+      <button id="startBTN" onclick="players()">Starta Spel</button>
+    </div>
+
+    <!--
+    <div id="playerContainer">
+      <input type="number" placeholder="Antal spelare" id="addPlayers" />
+      <button onclick="addPlayers()" class="">Add players</button>
+    </div>
+    
+  -->
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
