@@ -1,2 +1,3 @@
-# Memory
-My first mini game
+# Memory - My first mini game
+
+npm install
